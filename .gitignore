@@ -1,0 +1,42 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Runtime data (SQLite database, screenshots, traces)
+data/
+
+# Secrets (API keys)
+.env
+.env.*
+!.env.example
+
+# Local databases, run evidence and logs (if UITEST_DATA_DIR points inside the repo)
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+artifacts/
+*.webm
+trace.zip
+*.log
+
+# Test and tool caches
+.pytest_cache/
+.coverage
+htmlcov/
+.ruff_cache/
+.mypy_cache/
+
+# Editors and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,30 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "Autonomous UI testing agent - backend (API, planner, Playwright runner, healing)"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=0.125",
+    "browser-use>=0.11.13",
+    "chromium>=0.0.0",
+    "fastapi>=0.141.1",
+    "google-genai>=1.75",
+    "httpx>=0.28",
+    "langchain>=1.4.2",
+    "langgraph>=1.2.12",
+    "mcp>=2.2.0",
+    "openapi>=2.0.0",
+    "playwright>=1.63.0",
+    "python-dotenv>=1.2",
+    "uvicorn>=0.54",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
